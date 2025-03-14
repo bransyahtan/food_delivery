@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
     // print('login');
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const HomePage()),
+      MaterialPageRoute<Widget>(builder: (context) => const HomePage()),
     );
   }
 
