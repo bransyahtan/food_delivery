@@ -10,7 +10,7 @@ class Food {
   final String name;
   final String description;
   final String imagePath;
-  final double price;
+  final int price; // <-- dari double ke int
   final FoodCategory category;
   List<AddOn> availableAddons;
 }
@@ -20,5 +20,5 @@ enum FoodCategory { burgers, salads, sides, deserts, drink }
 class AddOn {
   AddOn({required this.name, required this.price});
   String name;
-  double price;
+  int price; // <-- dari double ke int
 }

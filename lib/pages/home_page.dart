@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/components/my_current_location.dart';
 import 'package:food_delivery/components/my_description_box.dart';
 import 'package:food_delivery/components/my_drawer.dart';
+import 'package:food_delivery/components/my_food_tile.dart';
 import 'package:food_delivery/components/my_sliver_app_bar.dart';
 import 'package:food_delivery/components/my_tab_bar.dart';
 import 'package:food_delivery/models/food.dart';
@@ -45,7 +46,9 @@ class _HomePageState extends State<HomePage>
         physics: const NeverScrollableScrollPhysics(),
         padding: EdgeInsets.zero,
         itemBuilder: (context, index) {
-          return ListTile(title: Text(categoryMenu[index].name));
+          final food = categoryMenu[index];
+
+          return MyFoodTile(food: food, onTap: () {});
         },
       );
     }).toList();
