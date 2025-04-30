@@ -32,4 +32,9 @@ flutter:
   assets:
     - assets/img/
     - assets/lottie/
+    - assets/img/burgers/
+    - assets/img/deserts/
+    - assets/img/drinks/
+    - assets/img/salads/
+    - assets/img/sides/
   uses-material-design: true

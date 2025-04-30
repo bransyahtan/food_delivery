@@ -38,12 +38,12 @@ class MyFoodTile extends StatelessWidget {
                     ],
                   ),
                 ),
-                // const SizedBox(width: 15),
-                const Icon(Icons.fastfood, size: 48, color: Colors.orange),
-                // ClipRRect(
-                //   borderRadius: BorderRadius.circular(8),
-                //   child: Image.asset(food.imagePath, height: 120),
-                // ),
+                const SizedBox(width: 15),
+                // const Icon(Icons.fastfood, size: 48, color: Colors.orange),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: Image.asset(food.imagePath, height: 120),
+                ),
               ],
             ),
           ),
