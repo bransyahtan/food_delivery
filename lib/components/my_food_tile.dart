@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/helper/helper.dart';
 import 'package:food_delivery/models/food.dart';
-import 'package:intl/intl.dart';
 
 class MyFoodTile extends StatelessWidget {
   const MyFoodTile({required this.food, required this.onTap, super.key});
@@ -9,12 +9,6 @@ class MyFoodTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final formattedPrice = NumberFormat.currency(
-      locale: 'id_ID',
-      symbol: 'Rp',
-      decimalDigits: 0,
-    ).format(food.price);
-
     return Column(
       children: [
         GestureDetector(
@@ -29,7 +23,7 @@ class MyFoodTile extends StatelessWidget {
                     children: [
                       Text(food.name),
                       Text(
-                        formattedPrice,
+                        formatRupiah.format(food.price),
                         style: TextStyle(
                           color: Theme.of(context).colorScheme.primary,
                         ),
