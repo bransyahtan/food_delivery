@@ -7,7 +7,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Classic Cheese Burger',
       description: 'Beef patty with melted cheese and house sauce',
-      imagePath: 'lib/images/burgers/cheese_burger.png',
+      imagePath: 'assets/img/burgers/cheese_burger.png',
       price: 45000,
       category: FoodCategory.burgers,
       availableAddons: [
@@ -19,7 +19,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Double Beef Burger',
       description: 'Double the beef, double the flavor',
-      imagePath: 'lib/images/burgers/double_beef.png',
+      imagePath: 'assets/img/burgers/double_beef.png',
       price: 60000,
       category: FoodCategory.burgers,
       availableAddons: [
@@ -30,7 +30,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Spicy Chicken Burger',
       description: 'Crispy chicken with spicy mayo',
-      imagePath: 'lib/images/burgers/spicy_chicken.png',
+      imagePath: 'assets/img/burgers/spicy_chicken.png',
       price: 50000,
       category: FoodCategory.burgers,
       availableAddons: [
@@ -42,7 +42,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Veggie Burger',
       description: 'Delicious vegetarian patty with fresh greens',
-      imagePath: 'lib/images/burgers/veggie.png',
+      imagePath: 'assets/img/burgers/veggie_burger.png',
       price: 45000,
       category: FoodCategory.burgers,
       availableAddons: [
@@ -55,7 +55,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Caesar Salad',
       description: 'Classic Caesar with croutons and parmesan',
-      imagePath: 'lib/images/salads/caesar.png',
+      imagePath: 'assets/img/salads/caesar_salads.png',
       price: 40000,
       category: FoodCategory.salads,
       availableAddons: [
@@ -66,7 +66,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Greek Salad',
       description: 'Fresh veggies with feta and olives',
-      imagePath: 'lib/images/salads/greek.png',
+      imagePath: 'assets/img/salads/greek_salad.png',
       price: 42000,
       category: FoodCategory.salads,
       availableAddons: [
@@ -78,7 +78,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Quinoa Bowl',
       description: 'Healthy mix of quinoa, beans, and greens',
-      imagePath: 'lib/images/salads/quinoa.png',
+      imagePath: 'assets/img/salads/quinoa_bowl.png',
       price: 50000,
       category: FoodCategory.salads,
       availableAddons: [
@@ -89,7 +89,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Fruit Salad',
       description: 'Seasonal fruits served chilled',
-      imagePath: 'lib/images/salads/fruit.png',
+      imagePath: 'assets/img/salads/fruit_salad.png',
       price: 35000,
       category: FoodCategory.salads,
       availableAddons: [
@@ -103,7 +103,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'French Fries',
       description: 'Crispy golden fries',
-      imagePath: 'lib/images/sides/fries.png',
+      imagePath: 'assets/img/sides/french_fries.png',
       price: 20000,
       category: FoodCategory.sides,
       availableAddons: [
@@ -114,7 +114,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Onion Rings',
       description: 'Crunchy battered onion rings',
-      imagePath: 'lib/images/sides/onion_rings.png',
+      imagePath: 'assets/img/sides/onion_rings.png',
       price: 25000,
       category: FoodCategory.sides,
       availableAddons: [
@@ -125,7 +125,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Mozzarella Sticks',
       description: 'Fried cheese sticks with marinara dip',
-      imagePath: 'lib/images/sides/mozzarella.png',
+      imagePath: 'assets/img/sides/mozarella_sticks.png',
       price: 30000,
       category: FoodCategory.sides,
       availableAddons: [
@@ -136,7 +136,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Chicken Nuggets',
       description: 'Juicy chicken bites served with sauce',
-      imagePath: 'lib/images/sides/nuggets.png',
+      imagePath: 'assets/img/sides/chicken_nugget.png',
       price: 28000,
       category: FoodCategory.sides,
       availableAddons: [
@@ -150,7 +150,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Chocolate Cake',
       description: 'Rich and moist chocolate delight',
-      imagePath: 'lib/images/deserts/choco_cake.png',
+      imagePath: 'assets/img/deserts/chocolate_cake.png',
       price: 30000,
       category: FoodCategory.deserts,
       availableAddons: [
@@ -161,7 +161,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Ice Cream Sundae',
       description: 'Vanilla ice cream with chocolate drizzle',
-      imagePath: 'lib/images/deserts/sundae.png',
+      imagePath: 'assets/img/deserts/icecream_sundae.png',
       price: 25000,
       category: FoodCategory.deserts,
       availableAddons: [
@@ -173,7 +173,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Cheesecake',
       description: 'Smooth and creamy with graham crust',
-      imagePath: 'lib/images/deserts/cheesecake.png',
+      imagePath: 'assets/img/deserts/cheesecake.png',
       price: 33000,
       category: FoodCategory.deserts,
       availableAddons: [
@@ -184,7 +184,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Brownie',
       description: 'Warm fudgy brownie square',
-      imagePath: 'lib/images/deserts/brownie.png',
+      imagePath: 'assets/img/deserts/brownie.png',
       price: 20000,
       category: FoodCategory.deserts,
       availableAddons: [
@@ -195,9 +195,9 @@ class Restaurant extends ChangeNotifier {
 
     // Drink
     Food(
-      name: 'Coca Cola',
+      name: 'Iced Cola',
       description: 'Chilled soda drink',
-      imagePath: 'lib/images/drink/coke.png',
+      imagePath: 'assets/img/drinks/iced_cola.png',
       price: 12000,
       category: FoodCategory.drink,
       availableAddons: [
@@ -208,7 +208,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Lemonade',
       description: 'Fresh lemon juice with sugar',
-      imagePath: 'lib/images/drink/lemonade.png',
+      imagePath: 'assets/img/drinks/lemonade.png',
       price: 15000,
       category: FoodCategory.drink,
       availableAddons: [
@@ -219,7 +219,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Iced Tea',
       description: 'Sweetened black tea over ice',
-      imagePath: 'lib/images/drink/iced_tea.png',
+      imagePath: 'assets/img/drinks/iced_tea.png',
       price: 15000,
       category: FoodCategory.drink,
       availableAddons: [
@@ -231,7 +231,7 @@ class Restaurant extends ChangeNotifier {
     Food(
       name: 'Milkshake',
       description: 'Creamy shake with choice of flavor',
-      imagePath: 'lib/images/drink/milkshake.png',
+      imagePath: 'assets/img/drinks/milkshake.png',
       price: 25000,
       category: FoodCategory.drink,
       availableAddons: [
