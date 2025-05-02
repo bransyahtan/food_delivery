@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/auth/login_or_register.dart';
 import 'package:food_delivery/pages/setting_page.dart';
+import 'package:food_delivery/services/auth/login_or_register.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
