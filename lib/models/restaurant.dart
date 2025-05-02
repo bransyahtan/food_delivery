@@ -247,8 +247,17 @@ class Restaurant extends ChangeNotifier {
     ),
   ];
 
+  String _deliveryAddress = 'Jalan. Bintaro Raya';
+  // GET DATA
   List<Food> get menu => _menu;
   List<CartItem> get cart => _cart;
+  String get deliveryAddress => _deliveryAddress;
+
+  // Update address
+  void updateAddress(String newAddress) {
+    _deliveryAddress = newAddress;
+    notifyListeners();
+  }
 
   // OPERATION
   final List<CartItem> _cart = [];
@@ -338,7 +347,9 @@ class Restaurant extends ChangeNotifier {
       ..writeln('----------')
       ..writeln()
       ..writeln('Total Items: ${getTotalItemCount()}')
-      ..writeln('Total Price: ${formatRupiah.format(getTotalPrice())}');
+      ..writeln('Total Price: ${formatRupiah.format(getTotalPrice())}')
+      ..writeln()
+      ..writeln('Delivering To: $deliveryAddress');
 
     return receipt.toString();
   }
