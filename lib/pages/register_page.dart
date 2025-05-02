@@ -77,7 +77,7 @@ class _RegisterPageState extends State<RegisterPage> {
               hintText: 'Confirm Password',
               obsecureText: true,
             ),
-            MyButton(onTap: () {}, text: 'REGISTER'),
+            MyButton(onTap: register, text: 'REGISTER'),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
