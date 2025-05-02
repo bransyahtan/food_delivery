@@ -9,7 +9,7 @@ class Restaurant extends ChangeNotifier {
 
     // Burgers
     Food(
-      name: 'Cheese Burger',
+      name: 'Classic Cheese Burger',
       description: 'Beef patty with melted cheese and house sauce',
       imagePath: 'assets/img/burgers/cheese_burger.png',
       price: 45000,
