@@ -25,12 +25,14 @@ class _RegisterPageState extends State<RegisterPage> {
       try {
         await authService.signUp(emailController.text, passwordController.text);
       } on Exception catch (error) {
+        if (!mounted) return;
         await showDialog<void>(
           context: context,
           builder: (context) => AlertDialog(title: Text(error.toString())),
         );
       }
     } else {
+      if (!mounted) return;
       await showDialog<void>(
         context: context,
         builder:
