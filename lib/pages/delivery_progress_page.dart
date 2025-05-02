@@ -12,7 +12,7 @@ class DeliveryProgressPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
       ),
       bottomNavigationBar: _bottomNavigationBar(context),
-      body: const Column(children: [MyReceipt()]),
+      body: const SingleChildScrollView(child: Column(children: [MyReceipt()])),
     );
   }
 }
