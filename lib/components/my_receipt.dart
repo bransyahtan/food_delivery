@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/models/restaurant.dart';
+import 'package:provider/provider.dart';
 
 class MyReceipt extends StatelessWidget {
   const MyReceipt({super.key});
@@ -21,8 +23,14 @@ class MyReceipt extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
               ),
               padding: const EdgeInsets.all(25),
-              child: const Text('Receipt Here'),
+              child: Consumer<Restaurant>(
+                builder:
+                    (context, restaurant, child) =>
+                        Text(restaurant.displayReceipt()),
+              ),
             ),
+            const SizedBox(height: 25),
+            const Text('Estimated Delivery time is 4:10 PM'),
           ],
         ),
       ),
